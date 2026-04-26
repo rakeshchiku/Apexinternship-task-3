@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced UI Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 Advanced UI Project</h1>
+        <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="carousel">
+        <h2>Image Carousel</h2>
+        <div class="carousel-wrapper">
+            <img id="carouselImage">
+        </div>
+
+        <div class="controls">
+            <button onclick="prevImage()">⬅</button>
+            <button onclick="nextImage()">➡</button>
+        </div>
+
+        <div id="dots" class="dots"></div>
+    </section>
+
+    <!-- API -->
+    <section class="api">
+        <h2>😂 Joke Generator</h2>
+        <button onclick="getJoke()">Get Joke</button>
+        <p id="loading"></p>
+        <p id="joke"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Rakesh | Advanced Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

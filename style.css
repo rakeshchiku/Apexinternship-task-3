@@ -1,0 +1,77 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #2563eb);
+    color: white;
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    padding: 20px;
+  }
+  
+  /* Carousel */
+  .carousel {
+    margin: 30px;
+  }
+  
+  .carousel img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  /* Buttons */
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #22c55e;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #16a34a;
+  }
+  
+  /* API */
+  .api-section {
+    margin: 40px;
+    padding: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .carousel img {
+      width: 95%;
+    }
+  }
+  /* LIGHT MODE FULL FIX */
+  body.light {
+      background: #f5f7fa;
+      color: #111;
+  }
+  
+  /* Fix buttons in light mode */
+  body.light button {
+      background: #2563eb;
+      color: white;
+  }
+  
+  /* Fix cards/sections */
+  body.light .carousel,
+  body.light .api {
+      color: #111;
+  }
+  
+  /* Fix dots visibility */
+  body.light .dots span {
+      background: #999;
+  }
+  
+  body.light .active-dot {
+      background: #2563eb;
+  }
